@@ -1,23 +1,17 @@
 import React from "react";
 import Cardi from "./Card";
-
 import "./CardList.css";
 
-const CardList = () => {
+import dbCardList from "../../database/dbCardList";
+
+let cardsList = dbCardList.map((card) => {
   return (
-    <div className="CardsList">
-      <Cardi />
-      <Cardi />
-      <Cardi />
-      <Cardi />
-      <Cardi />
-      <Cardi />
-      <Cardi />
-      <Cardi />
-      <Cardi />
-      <Cardi />
-    </div>
+    <Cardi cardData={card.coverURL} title={card.title} price={card.price} />
   );
+});
+
+const CardList = () => {
+  return <div className="CardsList">{cardsList}</div>;
 };
 
 export default CardList;

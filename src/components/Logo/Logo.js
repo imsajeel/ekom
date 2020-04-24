@@ -1,20 +1,11 @@
 import React from "react";
-import { MobileOutlined } from "@ant-design/icons";
+import LogoImage from "./Logo.png";
+import "./Logo.css";
 
 const Logo = () => {
   return (
-    <div>
-      <h1>
-        <MobileOutlined
-          style={{
-            padding: "20px",
-            fontSize: "48px",
-            color: "#08c",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        />
-      </h1>
+    <div className="logoImage">
+      <img src={LogoImage} alt="Logo" />
     </div>
   );
 };

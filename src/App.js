@@ -2,8 +2,8 @@ import React from "react";
 
 import MainMenu from "./components/MainMenu/MainMenu";
 import Logo from "./components/Logo/Logo";
-import CarouselHome from "./components/CarouselHome/CarouselHome";
-import Brands from "./components/Brands/Brands";
+
+import Home from "./pages/Home";
 
 import { Layout } from "antd";
 
@@ -11,6 +11,8 @@ import "./App.css";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
 const { Header, Content, Footer } = Layout;
+
+let route = "home";
 
 function App() {
   return (
@@ -20,10 +22,8 @@ function App() {
         <Header>
           <MainMenu />
         </Header>
-        <CarouselHome />
         <Content style={{ padding: "0 50px" }}>
-          <Brands />
-          <div className="site-layout-content">Content</div>
+          {route === "home" ? <Home /> : <h1>Somthing went wrong!!</h1>}
         </Content>
         <Footer style={{ textAlign: "center" }}>
           Ant Design ©2018 Created by Ant UED

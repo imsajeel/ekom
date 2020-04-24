@@ -1,0 +1,19 @@
+.brands {
+  margin: 40px;
+  text-align: center;
+}
+
+.brandsList {
+  display: flex;
+  justify-content: center;
+}
+.brandsImage {
+  height: 150px;
+  width: 150px;
+}
+
+.brandsImage > img {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}

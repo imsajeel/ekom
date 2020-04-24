@@ -31,9 +31,9 @@ const BrandsImages = [
   },
   {
     id: "6",
-    alt: "voice",
+    alt: "xiaomi",
     url:
-      "https://static-01.daraz.pk/brand/voice_92871d05748b0e01b4cab302599c9c64.jpg",
+      "https://i.pinimg.com/originals/f6/dc/36/f6dc36a0e79b6c92e4fd74ecdbb0d4e1.jpg",
   },
   {
     id: "7",

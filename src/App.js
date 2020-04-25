@@ -13,7 +13,7 @@ import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
 const { Header, Content, Footer } = Layout;
 
-let route = "homae";
+let route = "home";
 
 function App() {
   return (

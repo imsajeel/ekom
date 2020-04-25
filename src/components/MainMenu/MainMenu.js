@@ -41,7 +41,7 @@ const MainMenu = () => {
       </Menu.Item>
       <Menu.Item key="signin">
         <LoginOutlined />
-        Sigin
+        Sign in
       </Menu.Item>
     </Menu>
   );

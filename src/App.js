@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { Component } from "react";
 import MainMenu from "./components/MainMenu/MainMenu";
 import Logo from "./components/Logo/Logo";
 import FooterComp from "./components/Footer/FooterComp";
@@ -17,24 +16,25 @@ const { Header, Content, Footer } = Layout;
 
 let route = "home";
 
-function App() {
-  return (
-    <div>
-      <Logo />
-      <Layout className="layout">
-        <Header>
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Logo />
+        {/* {<Layout className="layout">
+          <Header>
           <MainMenu />
-        </Header>
-        <Content style={{ padding: "0 50px" }}>
+          </Header>
+          <Content style={{ padding: "0 50px" }}>
           {route === "home" ? <Home /> : <Cart />}
-        </Content>
-        <Footer style={{ textAlign: "center" }}>
-          <FooterComp />
-        </Footer>
-        <Signin />
-      </Layout>
-    </div>
-  );
+          </Content>
+          <Footer style={{ textAlign: "center" }}>
+            <FooterComp />
+          </Footer>
+        }</Layout> */}
+      </div>
+    );
+  }
 }
 
 export default App;

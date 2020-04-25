@@ -1,0 +1,15 @@
+.footerSocialIcons {
+  font-size: 26px;
+}
+
+.footerSocialIcons > a {
+  margin: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerSocialIcons > a:hover {
+  font-size: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}

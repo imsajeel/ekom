@@ -6,6 +6,7 @@ import {
   HeartOutlined,
   ContactsOutlined,
   UserOutlined,
+  LoginOutlined,
 } from "@ant-design/icons";
 
 const { Search } = Input;
@@ -38,7 +39,10 @@ const MainMenu = () => {
         <HeartOutlined />
         Wishlist
       </Menu.Item>
-      <Menu.Item key="signin">Sigin</Menu.Item>
+      <Menu.Item key="signin">
+        <LoginOutlined />
+        Sigin
+      </Menu.Item>
     </Menu>
   );
 };

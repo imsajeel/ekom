@@ -2,7 +2,7 @@ import React from "react";
 
 import MainMenu from "./components/MainMenu/MainMenu";
 import Logo from "./components/Logo/Logo";
-
+import FooteComp from "./components/Footer/FooterComp";
 import Home from "./pages/Home";
 
 import { Layout } from "antd";
@@ -26,7 +26,7 @@ function App() {
           {route === "home" ? <Home /> : <h1>Somthing went wrong!!</h1>}
         </Content>
         <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2018 Created by Ant UED
+          <FooteComp />
         </Footer>
       </Layout>
     </div>

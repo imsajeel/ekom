@@ -6,7 +6,10 @@ import BrandsImages from "../../database/dbBrandsImages";
 const Brands = () => {
   return (
     <div className="brands">
-      <h1>Top Brands</h1>
+      <h1>
+        Top Brands <hr />
+      </h1>
+
       <div className="brandsList">
         <div className="brandsImage">
           <img src={BrandsImages[0].url} alt={BrandsImages[0].alt} />

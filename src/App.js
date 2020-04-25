@@ -2,7 +2,8 @@ import React from "react";
 
 import MainMenu from "./components/MainMenu/MainMenu";
 import Logo from "./components/Logo/Logo";
-import FooteComp from "./components/Footer/FooterComp";
+import FooterComp from "./components/Footer/FooterComp";
+import Signin from "./components/Signin/Signin";
 import Home from "./pages/Home";
 
 import { Layout } from "antd";
@@ -12,7 +13,7 @@ import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
 const { Header, Content, Footer } = Layout;
 
-let route = "home";
+let route = "homae";
 
 function App() {
   return (
@@ -23,10 +24,10 @@ function App() {
           <MainMenu />
         </Header>
         <Content style={{ padding: "0 50px" }}>
-          {route === "home" ? <Home /> : <h1>Somthing went wrong!!</h1>}
+          {route === "home" ? <Home /> : <Signin />}
         </Content>
         <Footer style={{ textAlign: "center" }}>
-          <FooteComp />
+          <FooterComp />
         </Footer>
       </Layout>
     </div>

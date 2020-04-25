@@ -4,6 +4,8 @@ import MainMenu from "./components/MainMenu/MainMenu";
 import Logo from "./components/Logo/Logo";
 import FooterComp from "./components/Footer/FooterComp";
 import Signin from "./components/Signin/Signin";
+import Cart from "./components/Cart/Cart";
+
 import Home from "./pages/Home";
 
 import { Layout } from "antd";
@@ -24,11 +26,12 @@ function App() {
           <MainMenu />
         </Header>
         <Content style={{ padding: "0 50px" }}>
-          {route === "home" ? <Home /> : <Signin />}
+          {route === "home" ? <Home /> : <Cart />}
         </Content>
         <Footer style={{ textAlign: "center" }}>
           <FooterComp />
         </Footer>
+        <Signin />
       </Layout>
     </div>
   );

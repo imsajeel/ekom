@@ -11,6 +11,9 @@ import "./FooterComp.css";
 const FooterComp = () => {
   return (
     <div>
+      <div className="Red">
+        <h1>S</h1>
+      </div>
       Developed by: Sajeel Aalam
       <br />
       <div className="footerSocialIcons">

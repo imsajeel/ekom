@@ -1,6 +1,6 @@
 import React from "react";
-import { Card } from "antd";
-
+import { Card, Button } from "antd";
+import { ShoppingCartOutlined, HeartOutlined } from "@ant-design/icons";
 const { Meta } = Card;
 
 const Cardi = (cardData, title, price) => {
@@ -22,6 +22,11 @@ const Cardi = (cardData, title, price) => {
       }
     >
       <Meta title={cardData.title} description={`Rs. ${cardData.price}/-`} />
+      <div className="cardButtons">
+        <Button type="primary">Buy</Button>
+        <Button icon={<ShoppingCartOutlined />}></Button>
+        <Button icon={<HeartOutlined />}></Button>
+      </div>
     </Card>
   );
 };

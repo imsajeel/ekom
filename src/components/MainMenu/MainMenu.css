@@ -1,0 +1,18 @@
+.mainSearch {
+  margin: 15px;
+  min-width: 200px !important;
+  width: 30vw !important;
+}
+
+.SearchBt {
+  display: none !important;
+}
+
+@media only screen and (max-width: 560px) {
+  .SearchBt {
+    display: block !important;
+  }
+  .mainSearch {
+    display: none !important;
+  }
+}

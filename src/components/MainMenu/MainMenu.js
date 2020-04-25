@@ -21,7 +21,7 @@ const MainMenu = () => {
       <Search
         placeholder="input search text"
         onSearch={(value) => console.log(value)}
-        style={{ margin: "0px 15px", width: "30vw" }}
+        style={{ margin: "15px", width: "30vw", minWidth: "200px" }}
       />
       <Menu.Item key="about">
         <UserOutlined />

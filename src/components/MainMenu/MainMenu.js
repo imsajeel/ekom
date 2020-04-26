@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Input } from "antd";
+import { Menu } from "antd";
 import {
   HomeFilled,
   ShoppingCartOutlined,
@@ -9,8 +9,6 @@ import {
   LoginOutlined,
 } from "@ant-design/icons";
 
-const { Search } = Input;
-
 const MainMenu = () => {
   return (
     <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["home"]}>
@@ -18,11 +16,8 @@ const MainMenu = () => {
         <HomeFilled />
         Home
       </Menu.Item>
-      <Search
-        placeholder="input search text"
-        onSearch={(value) => console.log(value)}
-        style={{ margin: "15px", width: "30vw", minWidth: "200px" }}
-      />
+      <Menu.Item key="search">Search</Menu.Item>
+
       <Menu.Item key="about">
         <UserOutlined />
         About

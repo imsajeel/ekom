@@ -92,5 +92,13 @@ const dbCardList = [
     brand: "Apple",
     price: "128,000",
   },
+  {
+    id: "13",
+    coverURL:
+      "https://propakistani.pk/price/wp-content/uploads/2020/01/Huawei-p40-01.jpg",
+    title: "Huawei P40 Pro",
+    brand: "Huawei",
+    price: "154,990",
+  },
 ];
 export default dbCardList;

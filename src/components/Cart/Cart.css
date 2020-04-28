@@ -4,3 +4,16 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.CartCard {
+  width: 90vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .CartCard {
+    width: 100vh;
+  }
+  .Cart {
+    padding: 20px 0px;
+  }
+}

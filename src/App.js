@@ -27,16 +27,12 @@ class App extends Component {
             <MainMenu />
           </Header>
           <Content style={{ padding: "0 50px" }}>
-            <Product />
             {route === "home" ? <Home /> : <Cart />}
           </Content>
           <Footer style={{ textAlign: "center" }}>
             <FooterComp />
           </Footer>
-          }
         </Layout>
-        <Signin />
-        <Cart />
       </div>
     );
   }

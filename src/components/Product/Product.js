@@ -15,6 +15,7 @@ const moreImages = dbCardList[id].images.map((image) => (
 function onChange(value) {
   console.log("changed", value);
 }
+
 const Product = () => {
   return (
     <div className="ProductPage">
@@ -28,7 +29,9 @@ const Product = () => {
             <Rate disabled defaultValue={dbCardList[id].rating} />
             <a href="https://example.com"> {dbCardList[id].ratedby} ratings</a>
             <br />
-            Brand: <a href="https://example.com">{dbCardList[id].brand}</a>
+            Brand: <a href="https://example.com">{dbCardList[id].brand}</a>{" "}
+            <br />
+            <br />
             <hr />
             <h1>Rs {dbCardList[id].price}</h1>
             <br />

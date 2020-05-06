@@ -6,7 +6,7 @@ import dbCardList from "../../database/dbCardList";
 
 let cardsList = dbCardList.map((card) => {
   return (
-    <Cardi cardData={card.coverURL} title={card.title} price={card.price} />
+    <Cardi cardData={card.images[0]} title={card.title} price={card.price} />
   );
 });
 

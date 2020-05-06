@@ -30,6 +30,15 @@
   text-overflow: clip;
 }
 
+.ProductButton {
+  margin: 5px;
+  width: 200px;
+}
+
+.ProductMore > img {
+  padding: 20px;
+  width: 100%;
+}
 @media only screen and (max-width: 600px) {
   .ProductCard {
     width: 100vh;

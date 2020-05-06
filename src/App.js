@@ -4,8 +4,6 @@ import MainMenu from "./components/MainMenu/MainMenu";
 import FooterComp from "./components/Footer/FooterComp";
 import Product from "./components/Product/Product";
 
-import Home from "./pages/Home";
-
 import { Layout } from "antd";
 
 import "./App.css";
@@ -23,7 +21,6 @@ class App extends Component {
             <MainMenu />
           </Header>
           <Content style={{ padding: "0 50px" }}>
-            <Home />
             <Product />
           </Content>
           <Footer style={{ textAlign: "center" }}>

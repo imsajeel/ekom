@@ -1,0 +1,40 @@
+.ProductPage {
+  padding: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ProductCard {
+  width: 90vw;
+}
+
+.Product {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 5% 20px 5%;
+}
+
+.ProductImage {
+  width: 300px;
+  overflow: hidden;
+}
+
+.ProductImage > img {
+  height: 100%;
+  width: 100%;
+}
+
+.ProductDetails {
+  margin: 0px 10% 0px 10%;
+  text-overflow: clip;
+}
+
+@media only screen and (max-width: 600px) {
+  .ProductCard {
+    width: 100vh;
+  }
+  .ProductPage {
+    padding: 20px 0px;
+  }
+}

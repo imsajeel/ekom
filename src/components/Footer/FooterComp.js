@@ -28,16 +28,30 @@ const FooterComp = () => {
           </p>
         </div>
         <div className="footerCol">
+          <h1>Brands</h1>
+          <ul>
+            <li>
+              <a href="https://github.com/imsajeel">Apple</a>
+            </li>
+            <li>
+              <a href="https://github.com/imsajeel">Samsung</a>
+            </li>
+            <li>
+              <a href="https://github.com/imsajeel">Huawei</a>
+            </li>
+          </ul>
+        </div>
+        <div className="footerCol">
           <h1>Other Projects</h1>
           <ul>
             <li>
-              <a href="#">Robofriends</a>
+              <a href="https://github.com/imsajeel">Robofriends</a>
             </li>
             <li>
-              <a href="#">Face rocgination</a>
+              <a href="https://github.com/imsajeel">Face rocgination</a>
             </li>
             <li>
-              <a href="#">Covid 19 (new)</a>
+              <a href="https://github.com/imsajeel">Covid 19 (new)</a>
             </li>
           </ul>
         </div>

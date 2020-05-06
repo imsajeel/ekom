@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Rate, Button } from "antd";
+import { Card, Rate, Button, InputNumber } from "antd";
 import { ShoppingCartOutlined, HeartOutlined } from "@ant-design/icons";
 import "./Product.css";
 
@@ -12,7 +12,9 @@ const moreImages = dbCardList[id].images.map((image) => (
   <img src={image} alt="" />
 ));
 //
-
+function onChange(value) {
+  console.log("changed", value);
+}
 const Product = () => {
   return (
     <div className="ProductPage">
@@ -29,6 +31,17 @@ const Product = () => {
             Brand: <a href="https://example.com">{dbCardList[id].brand}</a>
             <hr />
             <h1>Rs {dbCardList[id].price}</h1>
+            <br />
+            Quantity:
+            <InputNumber
+              style={{ marginLeft: "10px" }}
+              defaultValue={1}
+              min={1}
+              max={10}
+              onChange={onChange}
+            />
+            <br />
+            <br />
             <Button className="ProductButton" type="primary">
               Buy now
             </Button>

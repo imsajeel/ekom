@@ -1,3 +1,40 @@
+/******
+* Footer Main
+****/
+
+.footerMain {
+  background-color: rgba(255, 255, 255, 0.212);
+  padding: 10px;
+  margin-bottom: 30px;
+  border-top: 1px solid lightgray;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerCol {
+  max-width: 400px;
+  margin: auto;
+}
+
+.footerCol > p {
+  text-align: left;
+}
+.footerCol > ul {
+  text-align: left;
+}
+
+.footerCol > img {
+  width: 100%;
+  max-width: 250px;
+}
+
+/******
+* Footer bottom
+****/
+
+.footerBottom {
+}
 .footerSocialIcons {
   font-size: 26px;
 }
@@ -12,10 +49,4 @@
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.Red {
-  height: 300px;
-  background-color: White;
-  margin-bottom: 20px;
 }
